@@ -48,7 +48,7 @@ function configureCheck() {
 function configurePage2() {
   jQuery.validator.messages.equalTo = "Please enter the same address again.";
   $("input:radio").on("click", function() {
-    if ($("#have_email_y").attr("checked") == "checked") {
+    if ($("input[name=have_email]:checked").val() == "y") {
       $("#email").show();
       $("#participant_email").addClass("email");
       $("#email_confirmation").rules("add", { equalTo: "#participant_email" });
