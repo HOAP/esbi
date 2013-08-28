@@ -5,21 +5,8 @@ class SurveyController < ApplicationController
   end
 
   def start
-    if params[:code].present?
-      if Participant.exists?(:code => params[:code])
-        @participant = Participant.where(:code => params[:code]).first
-      else
-        @participant = Participant.make(params[:code])
-      end
-      unless @participant.nil?
-        redirect_to @participant.current_path
-        return
-      end
-      flash[:error] = "Non existent code."
-    else
-      flash[:error] = "Please enter a participant code."
-    end
-    redirect_to :action => 'index'
+    @participant = Participant.make("esbi")
+    redirect_to @participant.current_path
   end
 
   def page

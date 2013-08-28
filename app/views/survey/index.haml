@@ -2,9 +2,8 @@
 
 %div{:style => "text-align: center;"}
   %p
-    Please enter a participant code below, then click the &ldquo;Start
+    When you are ready to start, please click the &ldquo;Start
     Survey&rdquo; button.
 
   = form_tag :action => 'start' do
-    %p= text_field_tag "code"
     %p= submit_tag "Start Survey"
