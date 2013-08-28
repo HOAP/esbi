@@ -77,10 +77,6 @@
   %div{:style => "width: 100%; margin: 4em; text-align: center;"}
     = hidden_field_tag "timer", 0, :class => "timer"
     = hidden_field_tag "page", "report"
-    %p
-      Would you like us to send you a copy of this feedback?
-      %br
-      = select :participant, :report_copy, {"Yes, by email and post" => "both", "Yes, by email" => "email", "Yes, by post" => "post", "No thanks" => "no"}, {:include_blank => true}, :class => "required"
     = submit_tag "Continue", :style => "font-size: 160%"
 
 :javascript
