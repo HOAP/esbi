@@ -170,11 +170,7 @@ class Participant < ActiveRecord::Base
       if self.exit_code == 0
         return report_path(self.key)
       else
-        if self.audit_c >= 10 && self.appointment == 0
-          return referral_path(self.key)
-        else
-          return finish_path(self.key)
-        end
+        return finish_path(self.key)
       end
     else
       return page_path(self.key)

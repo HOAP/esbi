@@ -27,11 +27,7 @@ class ReportController < ApplicationController
     if !params[:page].blank?
       @participant.increment_time(params[:page], params[:page_timer])
     end
-    if @participant.audit_c >= 10 && @participant.appointment == 0
-      redirect_to referral_url(:key => @participant.key)
-    else
-      redirect_to facts_url(:key => @participant.key)
-    end
+    redirect_to facts_url(:key => @participant.key)
   end
 
   def time
