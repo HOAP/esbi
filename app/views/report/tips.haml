@@ -1,53 +1,49 @@
 = render "tabbar", :active => :tips
 
 %p
-  Practical tips for low-risk drinking include the following:
+  Practical
+  = link_to 'tips for low-risk drinking', 'http://www.mhfa.com.au/documents/guidelines/8252_MHFA_prob_drinking_may09.pdf'
+  include the following (MHFA, 2009):
 
 %ul
   %li
-    Know how much alcohol is in a standard drink
+    Know how much alcohol is in a <em>standard drink</em>;
   %li
-    Know the number of standard drinks in each beverage (the number of standard
-    drinks is often listed on the beverage’s packaging)
+    Know the number of <em>standard drinks</em> in each beverage (the number of
+    <em>standard drinks</em> is often listed on the beverage’s packaging);
   %li
-    Keep count of the number of standard drinks consumed
+    Keep count of the number of <em>standard drinks</em> consumed
   %li
     Do not let people top up your glass before it is finished, so as not to
-    lose track of how much alcohol has been consumed
+    lose track of how much alcohol has been consumed;
   %li
-    Eat while drinking
+    Eat while drinking;
   %li
-    Drink plenty of water when drinking alcohol to prevent dehydration
+    Drink plenty of water when drinking alcohol to prevent dehydration;
   %li
     Drink beverages with lower alcohol content (e.g. low-alcohol beer instead
-    of full strength beer)
+    of full strength beer);
   %li
-    Switch to non-alcoholic drinks when starting to feel the effects of alcohol
+    Switch to non-alcoholic drinks when starting to feel the effects of alcohol;
   %li
-    Avoid keeping up with friends drink for drink
+    Avoid keeping up with friends drink for drink;
   %li
-    Avoid drinking competitions and drinking games
+    Avoid drinking competitions and drinking games;
   %li
     Drink slowly, for example, by taking sips instead of gulps and putting the
-    drink down between sips
+    drink down between sips;
   %li
-    Only have one drink at a time
+    Only have one drink at a time;
   %li
-    Spend time in activities that don’t involve drinking
+    Spend time in activities that don’t involve drinking;
   %li
     Drink alcohol as part of another activity instead of making it the main
-    activity
+    activity;
   %li
-    Identify situations where drinking is likely and avoid them if possible
-
-%p{:style => 'font-size: 80%'}
-  (Taken from
-  = link_to_if APP_CONFIG['link'], 'http://www.mhfa.com.au/documents/guidelines/8252_MHFA_prob_drinking_may09.pdf', 'http://www.mhfa.com.au/documents/guidelines/8252_MHFA_prob_drinking_may09.pdf'
-  )
+    Identify situations where drinking is likely and avoid them if possible.
 
 %p
   Other tips for controlling your drinking are available from the
-  Australian Drug Foundation:
-  = link_to_if APP_CONFIG['link'],  "http://www.druginfo.adf.org.au/druginfo/fact_sheets/the_facts_about_binge_drinking/the_facts_about_binge_drinking.html",  "http://www.druginfo.adf.org.au/druginfo/fact_sheets/the_facts_about_binge_drinking/the_facts_about_binge_drinking.html"
+  = link_to  "Australian Drug Foundation",  "http://www.druginfo.adf.org.au/druginfo/fact_sheets/the_facts_about_binge_drinking/the_facts_about_binge_drinking.html"
 
 = render 'report_footer', page: "tips"

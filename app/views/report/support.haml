@@ -32,13 +32,10 @@
 
 .contact
   %h3
-    Alcoholics Anonymous Newcastle Districts
+    = link_to "Alcoholics Anonymous Newcastle Districts", "http://www.aa.org.au/contact-central-service-offices.php"
 
   %p
-    = link_to_if APP_CONFIG['link'], "http://www.aa.org.au/contact-central-service-offices.php", "http://www.aa.org.au/contact-central-service-offices.php"
-
-  %p
-    For information about AA &amp; general assistance call the 24 hour Helpline
+    For information about AA &amp; general assistance call the 24 hour Helpline 1300 22 22 22.
 
   %p
     %strong Contact Information
@@ -46,14 +43,11 @@
     Phone: 4964 1555
     %br
     Email:
-    = link_to_if APP_CONFIG['link'], 'aa-newcastle@aa-area-c.org', "mailto:aa-newcastle@aa-area-c.org"
+    = link_to 'aa-newcastle@aa-area-c.org', "mailto:aa-newcastle@aa-area-c.org"
 
 .contact
   %h3
-    Alcohol and Drug Information Service (ADIS)
-
-  %p
-    = link_to_if APP_CONFIG['link'], "http://www.druginfo.nsw.gov.au/about_us/helplines", "http://www.druginfo.nsw.gov.au/about_us/helplines"
+    = link_to "Alcohol and Drug Information Service (ADIS)", "http://www.alcohol.gov.au"
 
   %p
     ADIS provides 24-hour confidential counselling, referral, information &amp;
@@ -63,14 +57,11 @@
   %p
     %strong Contact Information
     %br
-    Phone: 1800 422 599 or 9361 8000
+    Phone: 1800 422 599 or (02) 9361 8000
 
 .contact
   %h3
-    Awabakal Medical Centre
-
-  %p
-    = link_to_if APP_CONFIG['link'], "http://www1.hnehealth.nsw.gov.au/AboriginalHealthInfo/IndigenousHealthServices.cfm", "http://www1.hnehealth.nsw.gov.au/AboriginalHealthInfo/IndigenousHealthServices.cfm"
+    = link_to "Awabakal Medical Centre", "http://www1.hnehealth.nsw.gov.au/AboriginalHealthInfo/IndigenousHealthServices.cfm"
 
   %p
     Specialist support and services for Aboriginal and Torres Strait Islander
@@ -83,17 +74,17 @@
 
 .contact
   %h3
-    Turning Point Alcohol and Drug Centre
+    = link_to "Turning Point Alcohol and Drug Centre", "http://www.counsellingonline.org.au"
 
   %p
-    = link_to_if APP_CONFIG['link'], "http://www.counsellingonline.org.au/en/", "http://www.counsellingonline.org.au/en/"
+    Turning Point offers a 24 hour phone and online counselling services where
+    you can communicate with a professional counsellor about an alcohol or drug
+    related concern. This service is free for anyone seeking help with their
+    own drug use or the drug use of a family member, relative or friend.
 
   %p
     %strong Contact Information
     %br
     Phone: 1800 888 236
-    %br
-    Email:
-    = link_to_if APP_CONFIG['link'], "CounsellingOnline@turningpoint.org", "mailto:CounsellingOnline@turningpoint.org"
 
 = render 'report_footer', page: "support"
