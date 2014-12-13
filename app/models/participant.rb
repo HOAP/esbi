@@ -147,12 +147,6 @@ class Participant < ActiveRecord::Base
         # Ineligible if they have sensible drinking habits.
         self.exit_code = 3
         self.completed = true
-      else
-        # Stratify into control/subject
-        if SecureRandom.random_number(100) < @@control_pct
-          self.exit_code = 4
-          self.completed = true
-        end
       end
     end
     if !self.completed
