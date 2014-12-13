@@ -43,3 +43,9 @@ gem 'authlogic'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem 'redis', '~> 3.0.2'
+
+# Heroku gems
+# Enable static asset serving
+gem 'rails_12factor', group: :production
+# Use Ruby 2.0
+ruby '2.0.0'
