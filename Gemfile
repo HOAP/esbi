@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '3.2.21'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,7 +8,7 @@ gem 'rails', '3.2.14'
 gem 'pg'
 gem 'haml'
 gem 'unicorn'
-gem 'rmagick', :require => 'RMagick'
+gem 'rmagick', '= 2.13.3', :require => 'RMagick'
 gem 'gruff'
 gem 'pdfkit'
 
