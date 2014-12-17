@@ -10,6 +10,13 @@
 %p
   Would you like Hunter New England Health staff to send you a letter with
   an appointment for this clinic?
+
+%p{style: "border: 1px solid red; font-color: red; text-align: center;"}
+  %b
+    For Demonstration Purposes Only
+  %br
+  This website is not monitored, and you will <b>not</b> be contacted with a referral.
+
 = form_for @participant, :url => report_save_url(@participant.key) do |f|
   %p
     - appointment_values.each do |k,v|
